@@ -1,15 +1,13 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
 
+@import url(fonts/fonts.css);
+
 body {
     margin: 5%;
     font-size: medium;
     hyphens: auto;
     -epub-hyphens: auto;
-}
-
-code {
-    font-family: monospace;
 }
 
 h1,
@@ -111,7 +109,7 @@ tt,
 code,
 samp,
 kbd {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Inconsolata LGC", "DejaVu Sans Mono", monospace;
     word-wrap: break-word;
     font-size: 0.8em;
 }
@@ -133,7 +131,6 @@ img {
     box-shadow: rgba(0, 0, 0, 0.15) 0 1px 4px;
     box-sizing: border-box;
     border: white 0.5em solid;
-    
 }
 
 p img {

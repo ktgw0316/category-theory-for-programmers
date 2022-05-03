@@ -28,7 +28,7 @@ $(BUILD)/epub/$(BOOKNAME).epub: $(TITLE) $(CHAPTERS)
 
 $(BUILD)/html/$(BOOKNAME).html: $(CHAPTERS)
 	mkdir -p $(BUILD)/html
-	cp -r base.css images/ $(BUILD)/html
+	cp -r base.css fonts/ images/ $(BUILD)/html
 	pandoc $(TOC) --standalone --css=$(STYLE) --to=html5 -o $@ $^
 
 $(BUILD)/pdf/$(BOOKNAME).pdf: $(TITLE) $(CHAPTERS)
